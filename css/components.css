@@ -1,0 +1,46 @@
+/* Reusable components */
+
+/* Centered page container */
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Big rounded media card (used in hero + other sections) */
+.media-card {
+  border-radius: 26px;
+  overflow: hidden;
+  background: #3b3b3b;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.10);
+}
+
+.media-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Small uppercase label text */
+.micro-label {
+  margin: 0 0 10px;
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  color: #7c8798;
+  text-align: center;
+}
+
+/* Simple logo row */
+.logo-row {
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.logo-row__item {
+  font-size: 12px;
+  color: #2c3e50;
+  opacity: 0.85;
+}
