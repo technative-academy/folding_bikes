@@ -1,7 +1,10 @@
 git reset --soft HEAD~1
 git status
 git branch
-git checkout feature/homepage_footer
+git checkout feature/[name of feature]
+  ALTERNATIVE: git checkout -b feature/tabs
 git add .
 git commit -m"Add home page footer"
-git push origin feature/homepage_footer
+git push origin feature/[name of feature]
+
+
