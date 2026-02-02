@@ -1,16 +1,128 @@
 <!DOCTYPE html>
+<html>
 <head>
-  <title>folding bikes</title>
+  <title>About - Folding Bikes</title>
   <meta charset="utf-8">
-  <script src="app.js"></script>
-  <link rel="stylesheet" href="stylesheet.css">
+  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
-  <header></header>
+
+  <!-- TOP NAV (centered) -->
+  <header class="about-header">
+    <div class="about-header__inner">
+      <div class="about-header__logo">company logo</div>
+
+      <nav class="about-header__nav" aria-label="Primary">
+        <a class="about-header__link" href="./index.html">Home</a>
+        <a class="about-header__link" href="./products.html">Products</a>
+        <a class="about-header__link is-active" href="./about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
   <main>
-    <h1>TITLE: Folding bikes? You betcha!</h1>
-    <div>TAGLINE: if you like bikes and you like folding, you've come to the right place</div>
-    <img src="./images/bike_1.jpeg">
+
+    <!-- CURVED HERO -->
+    <section class="about-hero">
+      <div class="about-hero__inner">
+        <h1 class="about-hero__title">About us</h1>
+        <p class="about-hero__tagline">A tagline about us, and why we're important</p>
+      </div>
+    </section>
+
+    <!-- ABOUT TWO-COLUMN -->
+    <section class="about-main">
+      <div class="about-main__inner">
+
+        <div class="about-main__text">
+          <h2 class="about-main__heading">
+            We are great.<br>
+            Really great.
+          </h2>
+
+          <p class="about-main__p">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Amet consectetur adipiscing elit pellentesque habitant
+            morbi tristique. Dignissim convallis aenean et tortor at risus viverra adipiscing.
+            Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit.
+          </p>
+
+          <p class="about-main__p">
+            Aliquet porttitor lacus luctus accumsan tortor. Commodo nulla facilisi nullam vehicula
+            ipsum a arcu cursus vitae. Sit amet dictum sit amet justo donec enim diam. Sit amet
+            aliquam id diam maecenas ultricies mi eget. Pharetra vel turpis nunc eget lorem.
+            In egestas erat imperdiet sed euismod.
+          </p>
+        </div>
+
+        <figure class="about-main__media">
+          <div class="about-main__image-card">
+            <!-- swap src to your real image -->
+            <img src="./images/folding_bike_2.jpg" alt="About image">
+          </div>
+          <figcaption class="about-main__caption">ac tortor vitae purus faucibus.</figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact">
+      <div class="contact__inner">
+
+        <!-- LEFT: MAP + ADDRESS -->
+        <div class="contact__left">
+          <div class="contact__map">
+            <!-- easiest: use an image screenshot of a map like the mock -->
+            <img src="./images/map.png" alt="Map showing our location">
+          </div>
+
+          <div class="contact__address">
+            <div class="contact__address-title">Our address:</div>
+            <div>48 Faker Street</div>
+            <div>Fakesville</div>
+            <div>FK1 1FK</div>
+          </div>
+        </div>
+
+        <!-- RIGHT: FORM -->
+        <div class="contact__right">
+          <h2 class="contact__title">Contact us</h2>
+          <p class="contact__sub">
+            Email us on <a class="contact__email" href="mailto:hello@blah.com">hello@blah.com</a>
+            or enter your message below
+          </p>
+
+          <form class="contact__form">
+            <label class="contact__label">
+              Name:
+              <input class="contact__input" type="text" name="name" placeholder="Your name">
+            </label>
+
+            <label class="contact__label">
+              Email:
+              <input class="contact__input" type="email" name="email" placeholder="name@yourcompany.com">
+            </label>
+
+            <label class="contact__label">
+              Message:
+              <textarea class="contact__textarea" name="message" placeholder="Enter your message here"></textarea>
+            </label>
+
+            <button class="contact__button" type="submit">Submit</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
   </main>
-  <footer></footer>
+
+  <!-- FOOTER: reuse from your other page -->
+  <footer class="site-footer">
+    <p>Copyright 2026</p>
+  </footer>
+
 </body>
+</html>
