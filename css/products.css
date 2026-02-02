@@ -1,7 +1,246 @@
-*{
-    /*
-    padding: 0%;
-    margin: 0%;
+/* ---------------------------
+   Shared centered header (About/Products)
+---------------------------- */
 
-    */
+.page-header {
+  background: #fbfbff;
+  padding: 24px 20px 0;
+}
+
+.page-header__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-header__logo {
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.page-header__nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding-bottom: 18px;
+}
+
+.page-header__link {
+  text-decoration: none;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.page-header__link.is-active {
+  color: #111827;
+  font-weight: 600;
+}
+
+/* ---------------------------
+   Shared curved hero
+---------------------------- */
+
+.page-hero {
+  background: #fbfbff;
+  position: relative;
+  overflow: hidden;
+  padding: 52px 20px 84px;
+}
+
+.page-hero::after {
+  content: "";
+  position: absolute;
+  left: -10%;
+  right: -10%;
+  bottom: -150px;
+  height: 300px;
+  background: #ffffff;
+  border-radius: 0 0 60% 60%;
+}
+
+.page-hero__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-hero__title {
+  margin: 0 0 12px;
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: #111827;
+}
+
+.page-hero__tagline {
+  margin: 0;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* ---------------------------
+   Products search block
+---------------------------- */
+
+.products-search {
+  background: #ffffff;
+  padding: 30px 20px 20px;
+}
+
+.products-search__inner {
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.products-search__title {
+  margin: 0 0 16px;
+  font-size: 22px;
+  font-weight: 900;
+  color: #111827;
+}
+
+.products-search__controls {
+  display: flex;
+  justify-content: center;
+}
+
+.products-search__input {
+  width: 280px;
+  border: 1px solid #e9eaf2;
+  border-radius: 4px;
+  padding: 10px 12px;
+  font-size: 12px;
+  outline: none;
+  background: #ffffff;
+}
+
+.products-search__count {
+  margin: 14px 0 0;
+  font-size: 11px;
+  color: #6b7280;
+  font-style: italic;
+}
+
+/* ---------------------------
+   Products grid
+---------------------------- */
+
+.products {
+  background: #ffffff;
+  padding: 30px 20px 80px;
+}
+
+.products__inner {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.products__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px 48px;
+}
+
+/* Product card */
+.product-card__media {
+  border-radius: 24px;
+  overflow: hidden;
+  background: #2f3136;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.14);
+
+  height: 220px;          /* taller */
+}
+
+
+.product-card__media img {
+  width: 100%;
+  height: 100%;
+  display: block;
+
+  object-fit: contain;   /* show whole image */
+  background: #2f3136;   /* keeps dark card background visible */
+  padding: 10px;         /* breathing room around image */
+}
+
+
+.product-card__title {
+  margin: 14px 0 6px;
+  font-size: 16px;
+  font-weight: 900;
+  color: #111827;
+}
+
+.product-card__desc {
+  margin: 0 0 10px;
+  font-size: 11px;
+  line-height: 1.6;
+  color: #6b7280;
+  max-width: 260px;
+}
+
+.product-card__meta {
+  display: grid;
+  gap: 6px;
+}
+
+.product-card__stars {
+  font-size: 12px;
+  letter-spacing: 1px;
+  user-select: none;
+}
+
+.star {
+  color: #cfd2d9; /* grey off star */
+}
+
+.star--on {
+  color: #f59e0b; /* amber on star */
+}
+
+.product-card__price {
+  font-size: 11px;
+  font-weight: 800;
+  color: #374151;
+}
+
+/* Show more button */
+.products__more {
+  display: flex;
+  justify-content: center;
+  margin-top: 46px;
+}
+
+.products__button {
+  width: 190px;
+  border: none;
+  border-radius: 2px;
+  background: #6d4bff;
+  color: #ffffff;
+  padding: 10px 14px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+/* ---------------------------
+   Responsive
+---------------------------- */
+
+@media (max-width: 900px) {
+  .products__grid {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .product-card__desc {
+    max-width: none;
+  }
+
+  .products-search__input {
+    width: 100%;
+    max-width: 320px;
+  }
 }

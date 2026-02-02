@@ -1,14 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Folding Bikes | Products</title>
-    <link rel="stylesheet" href="products.css">
+  <title>Products - Folding Bikes</title>
+  <meta charset="utf-8">
+  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="css/site.css">
 </head>
-
 <body>
 
-</body>  
+  <!-- TOP NAV (centered) -->
+  <header class="page-header">
+    <div class="page-header__inner">
+      <div class="page-header__logo">company logo</div>
 
+      <nav class="page-header__nav" aria-label="Primary">
+        <a class="page-header__link" href="./index.html">Home</a>
+        <a class="page-header__link is-active" href="./products.html">Products</a>
+        <a class="page-header__link" href="./about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- CURVED HERO -->
+    <section class="page-hero">
+      <div class="page-hero__inner">
+        <h1 class="page-hero__title">Our products</h1>
+        <p class="page-hero__tagline">If you like them you really should buy one</p>
+      </div>
+    </section>
+
+    <!-- SEARCH -->
+    <section class="products-search">
+      <div class="products-search__inner">
+        <h2 class="products-search__title">Find the product you’re looking for</h2>
+
+        <div class="products-search__controls">
+          <input
+            id="productSearch"
+            class="products-search__input"
+            type="text"
+            placeholder="Search products"
+            aria-label="Search products"
+          >
+        </div>
+
+        <p id="productCount" class="products-search__count">6 products found</p>
+      </div>
+    </section>
+
+    <!-- GRID -->
+    <section class="products">
+      <div class="products__inner">
+
+        <div class="products__grid" id="productsGrid">
+
+          <!-- Card 1 -->
+          <article class="product-card" data-title="foldy-classic">
+            <div class="product-card__media">
+              <img src="./images/product_1.jpeg" alt="standard_bike">
+            </div>
+
+            <h3 class="product-card__title">The Foldy-classic</h3>
+            <p class="product-card__desc">A dependable little bike for your everage Joe</p>
+
+            <div class="product-card__meta">
+              <div class="product-card__stars" aria-label="4 out of 5 stars">
+                <span class="star star--on">★</span><span class="star star--on">★</span><span class="star star--on">★</span><span class="star star--on">★</span><span class="star">★</span>
+              </div>
+              <div class="product-card__price">£600</div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="product-card" data-title="Lightening 5000">
+            <div class="product-card__media">
+              <img src="./images/product_2.jpeg" alt="Product image">
+            </div>
+
+            <h3 class="product-card__title">Lightening 5000</h3>
+            <p class="product-card__desc">Faster than the speed of light.</p>
+
+            <div class="product-card__meta">
+              <div class="product-card__stars" aria-label="4 out of 5 stars">
+                <span class="star star--on">★</span><span class="star star--on">★</span><span class="star star--on">★</span><span class="star star--on">★</span><span class="star">★</span>
+              </div>
+              <div class="product-card__price">£250</div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="product-card" data-title="Shooting-star">
+            <div class="product-card__media">
+              <img src="./images/product_3.png" alt="Product image">
+            </div>
+
+            <h3 class="product-card__title">Shooting-star</h3>
+            <p class="product-card__desc">it's so good.</p>
+
+            <div class="product-card__meta">
+              <div class="product-card__stars" aria-label="4 out of 5 stars">
+                <span class="star star--on">★</span><span class="star star--on">★</span><span class="star star--on">★</span><span class="star star--on">★</span><span class="star">★</span>
+              </div>
+              <div class="product-card__price">£40</div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="product-card" data-title="The Twinkle Twinkle">
+            <div class="product-card__media">
+              <img src="./images/product_4.jpeg" alt="Product image">
+            </div>
+
+            <h3 class="product-card__title">The Twinkle Twinkle</h3>
+            <p class="product-card__desc">What can I say -> two wheels, pedals. It's got it all</p>
+
+            <div class="product-card__meta">
+              <div class="product-card__stars" aria-label="4 out of 5 stars">
+                <span class="star star--on">★</span><span class="star star--on">★</span><span class="star star--on">★</span><span class="star star--on">★</span><span class="star">★</span>
+              </div>
+              <div class="product-card__price">0.50p</div>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="product-card" data-title="The Rage-Roller">
+            <div class="product-card__media">
+              <img src="./images/product_5.png" alt="Product image">
+            </div>
+
+            <h3 class="product-card__title">The Rage-Roller</h3>
+            <p class="product-card__desc">If you're an angry person, this is the bike for you</p>
+
+            <div class="product-card__meta">
+              <div class="product-card__stars" aria-label="4 out of 5 stars">
+                <span class="star star--on">★</span><span class="star star--on">★</span><span class="star star--on">★</span><span class="star star--on">★</span><span class="star">★</span>
+              </div>
+              <div class="product-card__price">[can only be bought with bartering]</div>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="product-card" data-title="The Nylon Zebra">
+            <div class="product-card__media">
+              <img src="./images/product_6.jpg" alt="Product image">
+            </div>
+
+            <h3 class="product-card__title">The Nylon Zebra</h3>
+            <p class="product-card__desc">Think of a zebra, then think of a folding bike. This is it.</p>
+
+            <div class="product-card__meta">
+              <div class="product-card__stars" aria-label="4 out of 5 stars">
+                <span class="star star--on">★</span><span class="star star--on">★</span><span class="star star--on">★</span><span class="star star--on">★</span><span class="star">★</span>
+              </div>
+              <div class="product-card__price">£{}{}{}{}{}</div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="products__more">
+          <button class="products__button" type="button">Show more</button>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER: reuse your existing footer markup/styling -->
+  <footer class="site-footer">
+    <p>Copyright 2026</p>
+  </footer>
+
+</body>
 </html>
