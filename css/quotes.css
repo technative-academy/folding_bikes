@@ -1,0 +1,144 @@
+/* ---------------------------
+   Quotes section (Figma-style)
+---------------------------- */
+
+.quotes {
+  padding: 90px 20px;
+  background: #ffffff;
+}
+
+.quotes__inner {
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.quotes__title {
+  margin: 0 0 22px;
+  font-size: 44px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #1f2937;
+}
+
+.quotes__quote {
+  margin: 0 auto 50px;
+  max-width: 720px;
+  font-size: 20px;
+  line-height: 1.55;
+  color: #6b7280;
+}
+
+/* People row */
+.quotes__people {
+  max-width: 820px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 220px 1fr 1fr 1fr;
+  align-items: center;
+  gap: 28px;
+}
+
+/* Purple line on the left */
+.quotes__rule {
+  height: 3px;
+  width: 220px;
+  background: #6d4bff;
+  border-radius: 999px;
+  justify-self: start;
+}
+
+/* Person chip */
+.quotes__person {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-self: start;
+}
+
+.quotes__avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.quotes__meta {
+  text-align: left;
+}
+
+.quotes__name {
+  font-weight: 700;
+  color: #111827;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.quotes__blurb {
+  color: #6b7280;
+  font-size: 13px;
+  line-height: 1.2;
+  margin-top: 4px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .quotes__people {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 18px;
+  }
+
+  .quotes__rule {
+    width: 180px;
+    justify-self: center;
+    margin-bottom: 6px;
+  }
+
+  .quotes__person {
+    justify-self: center;
+  }
+
+  .quotes__meta {
+    text-align: center;
+  }
+}
+
+/* ---------------------------
+   Stats block (purple pill)
+---------------------------- */
+
+.stats {
+  padding: 40px 20px 90px;
+  background: #ffffff;
+}
+
+.stats__inner {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.stats__card {
+  background: #6d4bff;
+  border-radius: 18px;
+  padding: 56px 24px;
+  text-align: center;
+}
+
+.stats__big {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+}
+
+@media (max-width: 600px) {
+  .quotes__title {
+    font-size: 34px;
+  }
+  .stats__big {
+    font-size: 26px;
+  }
+}

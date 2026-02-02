@@ -1,0 +1,78 @@
+/* ---------------------------
+   People section
+---------------------------- */
+
+.people {
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.people__inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.people__title {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.people__quote {
+  font-size: 20px;
+  color: #6b7280;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+/* Tabs row */
+.people__tabs {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  align-items: center;
+}
+
+/* Individual person */
+.people__tab {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+  padding-top: 16px;
+}
+
+/* Purple active line */
+.people__line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 60px;
+  background: transparent;
+  border-radius: 999px;
+}
+
+.people__tab--active .people__line {
+  background: #6d4bff;
+}
+
+.people__tab img {
+  width: 72px;          /* bigger */
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;    /* prevents squashing */
+  flex-shrink: 0;       /* stops flexbox squeezing it */
+}
+
+
+.people__tab strong {
+  display: block;
+  font-size: 14px;
+}
+
+.people__tab span {
+  font-size: 13px;
+  color: #6b7280;
+}

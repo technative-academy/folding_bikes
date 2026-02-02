@@ -16,3 +16,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+const peopleQuote = document.getElementById("peopleQuote");
+const peopleTabs = document.querySelectorAll(".people__tab");
+
+peopleTabs.forEach(tab => {
+  tab.addEventListener("click", () => {
+    peopleTabs.forEach(t => t.classList.remove("people__tab--active"));
+    tab.classList.add("people__tab--active");
+
+    peopleQuote.textContent = tab.dataset.quote;
+  });
+});
