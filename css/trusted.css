@@ -1,0 +1,40 @@
+.trusted {
+  background: #ffffff;
+  padding: 40px 0 55px;
+}
+
+.trusted__inner {
+  text-align: center;
+}
+
+.trusted__label {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6c7a86;
+  margin: 0 0 18px;
+}
+
+.trusted__logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+
+.trusted__logo {
+  height: 22px;
+  width: auto;
+  display: block;
+  opacity: 0.9;
+  filter: saturate(0.9);
+}
+
+/* Slightly larger on bigger screens (optional) */
+@media (min-width: 900px) {
+  .trusted__logo {
+    height: 24px;
+  }
+}

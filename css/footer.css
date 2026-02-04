@@ -1,4 +1,65 @@
-/* site footer */
 .site-footer {
-  
+  background-color: #0f1a20;
+  color: #ffffff;
+  margin-top: 80px;
+  padding-top: 60px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer-column h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+.footer-column a {
+  color: #c7d0d6;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.footer-column a:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+  font-size: 0.9rem;
+  color: #aab4ba;
+}
+
+.social-icons {
+  display: flex;
+  gap: 14px;
+}
+
+.social-icons img {
+  width: 18px;
+  height: 18px;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+  filter: brightness(0) invert(1);
+}
+
+.social-icons img:hover {
+  opacity: 1;
+}
+
+.social-icons a {
+  color: #ffffff; /* icon colour */
 }

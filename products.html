@@ -8,15 +8,17 @@
 </head>
 <body>
 
-  <!-- TOP NAV (centered) -->
-  <header class="page-header">
-    <div class="page-header__inner">
-      <div class="page-header__logo">company logo</div>
+  <!-- SHARED HEADER -->
+  <header class="site-header-container">
+    <div class="site-header-inner">
+      <div class="logo">
+        <img src="./images/logo_main.png" alt="Company logo">
+      </div>
 
-      <nav class="page-header__nav" aria-label="Primary">
-        <a class="page-header__link" href="./index.html">Home</a>
-        <a class="page-header__link is-active" href="./products.html">Products</a>
-        <a class="page-header__link" href="./about.html">About</a>
+      <nav class="header-tabs" aria-label="Primary">
+        <a class="tab" href="./index.html">Home</a>
+        <a class="tab is-active" href="./products.html">Products</a>
+        <a class="tab" href="./about.html">About</a>
       </nav>
     </div>
   </header>
@@ -27,7 +29,7 @@
     <section class="page-hero">
       <div class="page-hero__inner">
         <h1 class="page-hero__title">Our products</h1>
-        <p class="page-hero__tagline">If you like them you really should buy one</p>
+        <p class="page-hero__tagline">Buy the thing to make yourself feel complete inside!</p>
       </div>
     </section>
 
@@ -74,7 +76,7 @@
           </article>
 
           <!-- Card 2 -->
-          <article class="product-card" data-title="Lightening 5000">
+          <article class="product-card" data-title="lightening-5000">
             <div class="product-card__media">
               <img src="./images/product_2.jpeg" alt="Product image">
             </div>
@@ -91,7 +93,7 @@
           </article>
 
           <!-- Card 3 -->
-          <article class="product-card" data-title="Shooting-star">
+          <article class="product-card" data-title="shooting-star">
             <div class="product-card__media">
               <img src="./images/product_3.png" alt="Product image">
             </div>
@@ -108,7 +110,7 @@
           </article>
 
           <!-- Card 4 -->
-          <article class="product-card" data-title="The Twinkle Twinkle">
+          <article class="product-card" data-title="the-twinkle-twinkle">
             <div class="product-card__media">
               <img src="./images/product_4.jpeg" alt="Product image">
             </div>
@@ -125,7 +127,7 @@
           </article>
 
           <!-- Card 5 -->
-          <article class="product-card" data-title="The Rage-Roller">
+          <article class="product-card" data-title="the-rage-roller">
             <div class="product-card__media">
               <img src="./images/product_5.png" alt="Product image">
             </div>
@@ -142,7 +144,7 @@
           </article>
 
           <!-- Card 6 -->
-          <article class="product-card" data-title="The Nylon Zebra">
+          <article class="product-card" data-title="the-nylon-zebra">
             <div class="product-card__media">
               <img src="./images/product_6.jpg" alt="Product image">
             </div>
@@ -169,9 +171,33 @@
 
   </main>
 
-  <!-- FOOTER: reuse your existing footer markup/styling -->
+  <!-- SHARED FOOTER -->
   <footer class="site-footer">
-    <p>Copyright 2026</p>
+    <div class="footer-top container">
+      <div class="footer-column">
+        <h4>Company</h4>
+        <a href="./about.html">About Us</a>
+        <a href="./about.html#contact">Contact Us</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Legal</h4>
+        <a href="#">Cookies Policy</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <p>© 2026 - All rights reserved</p>
+
+      <div class="social-icons">
+        <a href="#"><img src="./images/social_media/insta.svg" alt="Instagram"></a>
+        <a href="#"><img src="./images/social_media/dribbble.svg" alt="Dribbble"></a>
+        <a href="#"><img src="./images/social_media/twitter.svg" alt="Twitter"></a>
+        <a href="#"><img src="./images/social_media/youtube.svg" alt="YouTube"></a>
+      </div>
+    </div>
   </footer>
 
 </body>
