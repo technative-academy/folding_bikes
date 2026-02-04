@@ -8,9 +8,14 @@
 }
 
 .site-header-inner {
-  max-width: 720px;
+  max-width: 1100px;
   margin: 0 auto;
-  text-align: center;
+  padding: 24px 24px 20px;
+
+  display: flex;
+  flex-direction: column;   /* 👈 THIS is the key */
+  align-items: center;
+  gap: 14px;
 }
 
 .site-logo {
@@ -28,8 +33,7 @@
 
 .header-tabs {
   display: flex;
-  justify-content: center;
-  gap: 36px;
+  gap: 40px;
 }
 
 .tab {
